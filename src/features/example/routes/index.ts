@@ -13,11 +13,6 @@ const featureARoutes: RouteRecordRaw[] = [
         component: () => import("@/features/example/views/ExampleView.vue"),
       },
       {
-        path: "form",
-        name: ExamplePageName.EXAMPLE_FORM,
-        component: () => import("@/features/example/views/ExampleFormView.vue"),
-      },
-      {
         path: "tanstack",
         name: ExamplePageName.EXAMPLE_TANSTACK,
         component: () => import("@/features/example/views/ExampleTanstack.vue"),
