@@ -3,6 +3,6 @@ import { type App } from "vue"
 
 import { vueQueryOptions } from "./client"
 
-export function installVueQuery(app: App) {
+export function useTanstackQuery(app: App) {
   app.use(VueQueryPlugin, vueQueryOptions)
 }

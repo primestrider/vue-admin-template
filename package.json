@@ -17,6 +17,7 @@
     "create-feature": "node scripts/create-feature.js"
   },
   "dependencies": {
+    "@fontsource/plus-jakarta-sans": "^5.2.8",
     "@nuxt/ui": "^4.9.0",
     "@tailwindcss/vite": "^4.1.14",
     "@tanstack/vue-query": "^5.90.2",
