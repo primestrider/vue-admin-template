@@ -3,6 +3,9 @@ import vue from "@vitejs/plugin-vue"
 import { URL, fileURLToPath } from "node:url"
 import { defineConfig } from "vite"
 
+import { nuxtConfigTheme } from "./src/plugins/nuxt-ui/theme"
+import { nuxtConfigUi } from "./src/plugins/nuxt-ui/ui"
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -21,7 +24,10 @@ export default defineConfig({
         propsDestructure: true,
       },
     }),
-    ui(),
+    ui({
+      theme: nuxtConfigTheme,
+      ui: nuxtConfigUi,
+    }),
   ],
   resolve: {
     alias: {
