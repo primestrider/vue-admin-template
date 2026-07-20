@@ -187,48 +187,53 @@ export const useAppToast = () => {
 
   return {
     /**
-     * Displays a fully customizable toast.
+     * Collection of helper methods for displaying application toast notifications.
      */
-    show,
+    showToast: {
+      /**
+       * Displays a fully customizable toast.
+       */
+      custom: show,
 
-    /**
-     * Displays a success toast.
-     */
-    success,
+      /**
+       * Displays a success toast.
+       */
+      success,
 
-    /**
-     * Displays an error toast.
-     */
-    error,
+      /**
+       * Displays an error toast.
+       */
+      error,
 
-    /**
-     * Displays a warning toast.
-     */
-    warning,
+      /**
+       * Displays a warning toast.
+       */
+      warning,
 
-    /**
-     * Displays an informational toast.
-     */
-    info,
+      /**
+       * Displays an informational toast.
+       */
+      info,
 
-    /**
-     * Displays a persistent loading toast.
-     */
-    loading,
+      /**
+       * Displays a persistent loading toast.
+       */
+      loading,
+    },
 
     /**
      * Updates an existing toast.
      */
-    update: toast.update,
+    updateToast: toast.update,
 
     /**
      * Removes a toast by its identifier.
      */
-    remove: toast.remove,
+    removeToast: toast.remove,
 
     /**
      * Removes all currently displayed toasts.
      */
-    clear: toast.clear,
+    clearToast: toast.clear,
   }
 }
