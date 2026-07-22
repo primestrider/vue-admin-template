@@ -14,7 +14,8 @@
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
-    "create-feature": "node scripts/create-feature.js"
+    "create-feature": "node scripts/create-feature.js",
+    "generate:nuxt-ui-components": "node scripts/generate-nuxt-ui-components.js"
   },
   "dependencies": {
     "@fontsource/plus-jakarta-sans": "^5.2.8",

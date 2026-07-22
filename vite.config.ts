@@ -25,6 +25,8 @@ export default defineConfig({
       },
     }),
     ui({
+      autoImport: false,
+      components: false,
       theme: nuxtConfigTheme,
       ui: nuxtConfigUi,
     }),

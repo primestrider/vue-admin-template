@@ -19,4 +19,17 @@ export default defineConfigWithVueTs(
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
   skipFormatting,
+  {
+    name: 'app/vue-components',
+    files: ['**/*.vue'],
+    rules: {
+      // Require explicit script imports when components: false in Nuxt UI
+      'vue/no-undef-components': [
+        'error',
+        {
+          ignorePatterns: ['RouterLink', 'RouterView'],
+        },
+      ],
+    },
+  },
 )

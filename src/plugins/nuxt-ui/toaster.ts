@@ -1,4 +1,5 @@
 import type { ToastProps } from "@nuxt/ui"
+import { useToast } from "@nuxt/ui/composables"
 
 /**
  * Available preset variants for application toasts.
